@@ -9,7 +9,7 @@ O objetivo do teste é validar o comportamento do sistema ao tentar recuperar um
 O objetivo do teste é validar o comportamento do sistema ao tentar recuperar uma senha informando dados incorretos.
 
 # CT03
--- O objetivo do teste é validar o comportamento do sistema ao tentar recuperar uma senha informando dados corretos.
+O objetivo do teste é validar o comportamento do sistema ao tentar recuperar uma senha informando dados corretos.
 
 # Pré-requisitos
 
