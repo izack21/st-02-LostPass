@@ -1,4 +1,4 @@
-# st-02-LostPass
+# SUIT TEST 02 - Lost Password
 
 O objetivo dos testes presentes neste repositório é validar o funcionamento do fluxo de recuperação de senha.
 
