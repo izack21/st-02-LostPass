@@ -14,6 +14,6 @@ CT03
 // O objetivo do teste é validar o comportamento do sistema ao tentar recuperar uma senha
 // informando dados corretos.
 
-#Pré-requisitos
+# Pré-requisitos
 
 Plug-ins Selenium WebDriver.
