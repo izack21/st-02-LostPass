@@ -1,5 +1,5 @@
 // Desenvolvido por: Izack G. Passos Rodrigues - Setembro/2020
-// O objetivo do teste � validar o comportamento do sistema ao tentar recuperar uma senha
+// O objetivo do teste é validar o comportamento do sistema ao tentar recuperar uma senha
 // informando dados corretos.
 using System;
 using System.Collections;
@@ -18,7 +18,9 @@ public class Ct03SubmitSuccessTest {
   private IWebDriver driver;
   public IDictionary<string, object> vars {get; private set;}
   private IJavaScriptExecutor js;
-  [SetUp]
+  public string username = ""; //Variavel de preenchimento obrigatório para o teste.
+  public string userEmail = ""; //Variavel de preenchimento obrigatório para o teste.
+    [SetUp]
   public void SetUp() {
     driver = new ChromeDriver();
     js = (IJavaScriptExecutor)driver;
@@ -32,8 +34,8 @@ public class Ct03SubmitSuccessTest {
   public void ct03SubmitSuccess() {
     driver.Navigate().GoToUrl("https://mantis-prova.base2.com.br/lost_pwd_page.php");
     driver.FindElement(By.Name("username")).Click();
-    driver.FindElement(By.Name("username")).SendKeys("izack.rodrigues");
-    driver.FindElement(By.Name("email")).SendKeys("izackbh@gmail.com");
+    driver.FindElement(By.Name("username")).SendKeys(username);
+    driver.FindElement(By.Name("email")).SendKeys(userEmail);
     driver.FindElement(By.CssSelector(".button")).Click();
     Assert.That(driver.FindElement(By.CssSelector("b")).Text, Is.EqualTo("Password Message Sent"));
 
